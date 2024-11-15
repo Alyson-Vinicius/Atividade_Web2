@@ -32,6 +32,11 @@ class UserFactory extends Factory
         ];
     }
 
+    public function run()
+    {
+        User::factory()->count(10)->create();
+    }
+
     /**
      * Indicate that the model's email address should be unverified.
      */

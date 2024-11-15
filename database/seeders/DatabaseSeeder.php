@@ -9,12 +9,14 @@ class DatabaseSeeder extends Seeder
     
     public function run()
     {
-        FakerFactory::create()->unique(true);
         $this->call([
+            UserSeeder::class,
             CategorySeeder::class,
             AuthorPublisherBookSeeder::class,
+            UserBorrowingSeeder::class,
         ]);
     }
+    
 
     
 
