@@ -3,7 +3,15 @@
 namespace App\Providers;
 
 use App\Models\Book;
+use App\Models\Author;
+use App\Models\Publisher;
+use App\Models\User;
+use App\Models\Category;
 use App\Policies\BookPolicy;
+use App\Policies\AuthorPolicy;
+use App\Policies\PublisherPolicy;
+use App\Policies\UserPolicy;
+use App\Policies\CategoryPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 

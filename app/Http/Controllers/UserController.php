@@ -30,14 +30,4 @@ class UserController extends Controller
         return redirect()->route('users.index')->with('success', 'Usuário atualizado com sucesso.');
     }
 
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(User $user)
-    {
-        $user->delete();
-
-        return redirect()->route('users.index')->with('success', 'Usuário excluído com sucesso.');
-    }
 }

@@ -9,7 +9,7 @@ class BookPolicy
 {
     public function viewAny(User $user)
     {
-        return true; // Everyone can view books
+        return true;
     }
 
     public function create(User $user)

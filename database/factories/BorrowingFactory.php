@@ -21,3 +21,4 @@ class BorrowingFactory extends Factory
         ];
     }
 }
+

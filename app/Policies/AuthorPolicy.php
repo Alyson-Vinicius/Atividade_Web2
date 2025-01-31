@@ -9,12 +9,12 @@ class AuthorPolicy
 {
     public function viewAny(User $user)
     {
-        return true; // Everyone can view authors list
+        return true; 
     }
 
     public function view(User $user)
     {
-        return true; // Everyone can view author details
+        return true;
     }
 
     public function create(User $user)

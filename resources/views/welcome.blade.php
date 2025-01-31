@@ -32,36 +32,11 @@
                             <nav class="-mx-3 flex flex-1 justify-end">
                                 @auth
                                     <a
-                                        href="{{ url('/authors') }}"
+                                        href="{{ url('/home') }}"
                                         class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
                                     >
-                                        Authors
+                                        Dashboard
                                     </a>
-                                    <a
-                                        href="{{ url('/publishers') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Publishers
-                                    </a>
-                                    <a
-                                        href="{{ url('/books') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Books
-                                    </a>
-                                    <a
-                                        href="{{ url('/categories') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Categories
-                                    </a>
-                                    <a
-                                        href="{{ url('/users') }}"
-                                        class="rounded-md px-3 py-2 text-black ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white"
-                                    >
-                                        Users
-                                    </a>
-                                    
                                 @else
                                     <a
                                         href="{{ route('login') }}"
@@ -77,7 +52,6 @@
                                         >
                                             Register
                                         </a>
-                                        
                                     @endif
                                 @endauth
                             </nav>
